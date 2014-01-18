@@ -16,4 +16,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/codinavid.mk
+    $(LOCAL_DIR)/full_codinavid.mk \
+    $(LOCAL_DIR)/omni_codinavid.mk
