@@ -1,14 +1,14 @@
 [
   {
-    "repository": "android_device_samsung_golden",
-    "target_path": "device/samsung/golden"
+    "repository": "android_device_samsung_codinavid",
+    "target_path": "device/samsung/codinavid"
   },
   {
-    "repository": "android_kernel_samsung_golden",
-    "target_path": "kernel/samsung/golden"
+    "repository": "android_kernel_samsung_common",
+    "target_path": "kernel/samsung/common"
   },
   {
-   "repository": "android_vendor_samsung_golden",
-   "target_path": "vendor/samsung/golden"
+   "repository": "android_vendor_samsung_codinavid",
+   "target_path": "vendor/samsung/codinavid"
   }
 ]
