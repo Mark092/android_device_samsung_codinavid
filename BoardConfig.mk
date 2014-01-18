@@ -15,8 +15,8 @@
 # limitations under the License.
 #
 
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/golden/include
-TARGET_OTA_ASSERT_DEVICE := golden,i8190,GT-I8190
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/codinavid/include
+TARGET_OTA_ASSERT_DEVICE := codinavid,t599v,SGH-T599V
 
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := DB8520H
@@ -48,15 +48,15 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_golden_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/golden
+TARGET_KERNEL_CONFIG := cyanogenmod_codinaxxx_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/common
 TARGET_USE_ST_ERICSSON_KERNEL := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 
 # Graphics
 USE_OPENGL_RENDERER := true
-BOARD_EGL_CFG := device/samsung/golden/configs/lib/egl/egl.cfg
+BOARD_EGL_CFG := device/samsung/codinavid/configs/lib/egl/egl.cfg
 COMMON_GLOBAL_CFLAGS += -DEGL_NEEDS_FNW -DFORCE_SCREENSHOT_CPU_PATH
 
 # Screen
@@ -83,11 +83,11 @@ BOARD_NO_APSME_ATTR := true
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/golden/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/golden/bluetooth/btvendor_golden.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/codinavid/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/samsung/codinavid/bluetooth/btvendor_codinaxxx.txt
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/golden/ril/
+BOARD_RIL_CLASS := ../../../device/samsung/codinavid/ril/
 
 # Browser
 ENABLE_WEBGL := true
@@ -108,10 +108,10 @@ BOARD_LPM_BOOT_ARGUMENT_VALUE := 1
 # Recovery
 BOARD_UMS_LUNFILE := "/sys/devices/platform/musb-ux500.0/musb-hdrc/gadget/lun0/file"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/musb-ux500.0/musb-hdrc/gadget/lun%d/file"
-TARGET_RECOVERY_INITRC := device/samsung/golden/recovery/recovery.rc
-TARGET_RECOVERY_FSTAB := device/samsung/golden/rootdir/fstab.samsunggolden
+TARGET_RECOVERY_INITRC := device/samsung/codinavid/recovery/recovery.rc
+TARGET_RECOVERY_FSTAB := device/samsung/codinavid/rootdir/fstab.samsunggolden
 RECOVERY_FSTAB_VERSION := 2
 BOARD_HAS_NO_MISC_PARTITION := true
-BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/golden/recovery/graphics.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/codinavid/recovery/graphics.c
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_EMMC_WIPE := true
